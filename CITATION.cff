@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using this metadata."
+title: "Ageing–Rejuvenation Dynamics: illustrative mechanistic model"
+type: software
+authors:
+  - family-names: "Sottas"
+    given-names: "Pierre-Edouard"
+repository-code: "https://github.com/reversingaging/ageing-rejuvenation-dynamics"
+license: MIT
+keywords:
+  - ageing
+  - rejuvenation
+  - dynamical systems
+  - senescence
+  - systemic signalling
+  - extracellular vesicles
