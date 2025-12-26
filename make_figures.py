@@ -33,9 +33,17 @@ def main() -> None:
     # Parameters (must match Supplement naming exactly)
     # Paste your exact params dict here.
     # ----------------------------
+
     params = {
-        # TODO: paste exact parameter names + values from your Supplement
-        # Example (REMOVE): "a": 1.0,
+        "mu_D": 1.0,       # μ_D  Damage accumulation rate
+        "lambda_Y": 0.034, # λ_Y  Decline rate of systemic capacity
+        "Y_min": 0.30,     # Y_min Residual regenerative capacity
+        "alpha_DS": 0.0112,  # α_DS Damage–senescence coupling
+        "beta_SY": 0.00812,  # β_SY Suppression of senescence by Y
+        "alpha_AS": 0.007,   # α_AS Reinforcement of senescence by A
+        "alpha_SA": 0.30,    # α_SA Production of A by senescence
+        "gamma_A": 0.033,    # γ_A Feedback amplification coefficient
+        "beta_AY": 0.05,     # β_AY Suppression of A by Y
     }
 
     if not params:
