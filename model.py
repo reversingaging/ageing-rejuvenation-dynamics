@@ -1,7 +1,7 @@
 """
 Minimal dynamical model used in Supplementary Information (illustrative / mechanistic).
 
-State vector order (consistent with your notebook):
+State vector order :
   y = [D, S, A, Y]
 
 Parameters (names aligned to Supplementary File 1, Table 1):
@@ -16,7 +16,7 @@ Parameters (names aligned to Supplementary File 1, Table 1):
   β_AY   : suppression of A by Y
 
 Notes:
-- Time is in arbitrary units (a.u.), as in the Supplement.
+- Time is in arbitrary units (a.u.).
 - This code is intended to reproduce the manuscript Supplement figures from the provided equations/parameters.
 """
 
@@ -56,7 +56,7 @@ def minimal_model_v2(t: float, state: np.ndarray, params: Params) -> np.ndarray:
     gamma_A = params["γ_A"]     # feedback amplification coefficient
     beta_AY = params["β_AY"]    # suppression of A by Y
 
-    # ODEs (same structure as your notebook)
+    # ODEs
     dDdt = mu_D
     dYdt = -lam_Y * (Y - Y_min)
     dSdt = alpha_DS * dDdt - beta_SY * Y + alpha_AS * A
@@ -91,7 +91,7 @@ def compute_X_h(
     kappa: float = 0.0023,
 ) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
     """
-    Hazard proxy used for internal plotting in the notebook.
+    Hazard proxy used for internal plotting.
 
     X = A - Y
     h = h_min + kappa * max(0, X)
