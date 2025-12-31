@@ -63,7 +63,7 @@ def plot_baseline_S2(
     save: bool = True,
 ):
     """
-    Produces a single 2x2 multi-panel figure suitable for Supplement.
+    Produces a single 2x2 multi-panel figure.
 
     Panels:
       (a) D(t): cumulative molecular damage
@@ -217,7 +217,7 @@ def plot_baseline_S1_with_hazard(
     excess_ylim: Tuple[float, float] = (1e-3, 0.3),
 ):
     """
-    Produces a single 3x2 multi-panel figure suitable for Supplement.
+    Produces a single 3x2 multi-panel figure.
     Layout:
       Row 1: D(t) | Y(t)
       Row 2: S(t) | A(t) (+ inset of normalised A and Y)
